@@ -18,7 +18,7 @@ void USART_Init(long baud){
     
     //Tx
     TXSTAbits.TX9 = 0; //8 bits
-    TXSTAbits.TXEN = 1; //habilitar transmisión
+    TXSTAbits.TXEN = 1; //habilitar transmisiÃ³n
     
     //Rx
     RCSTAbits.RC9 = 0; //8 bits
