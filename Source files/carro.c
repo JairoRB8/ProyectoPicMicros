@@ -38,7 +38,7 @@ void main(void) {
                 LATBbits.LB2 = 1;
                 LATBbits.LB3 = 0;
                 break;
-            case 1: //atr·s
+            case 1: //atr√°s
                 LATBbits.LB0 = 0;
                 LATBbits.LB1 = 1;
                 LATBbits.LB2 = 0;
