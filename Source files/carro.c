@@ -9,12 +9,15 @@
 #include <xc.h>
 #include "LibreriaMicros.h"
 #include <pic18f4550.h>
+#include "PWM.h"
+
 volatile int contador = 0;
 char comandoRecibido;
 int numeroComando;
 __bit ledEncendida = 0;
 void main(void) {
     USART_Init(9600);
+    PWM_Init();
     LATC=0;
     LATA=0;
     TRISBbits.RB0 = 0;
@@ -66,16 +69,22 @@ void main(void) {
                 }
                 break;
             case 6: //velocidad 1
+                PWM_Speed(0);
                 break;
             case 7: //velocidad 2
+                PWM_Speed(1);
                 break;
             case 8: //velocidad 3
+                PWM_Speed(2);
                 break;
             case 9: //velocidad 4
+                PWM_Speed(3);
                 break;
             case 10://velocidad 5
+                PWM_Speed(4);
                 break;    
             default:
+                PWM_Speed(0);
                 //apagar motores
                 break;
         }   
