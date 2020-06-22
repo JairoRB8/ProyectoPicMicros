@@ -7,7 +7,7 @@
 
 
 #include <xc.h>
-#include "USARTlib.h"
+#include "LibreriaMicros.h"
 #include <pic18f4550.h>
 volatile int contador = 0;
 char comandoRecibido;

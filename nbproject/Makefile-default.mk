@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=carro.c USARTlib.c
+SOURCEFILES_QUOTED_IF_SPACED=carro.c LibreriaMicros.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/carro.p1 ${OBJECTDIR}/USARTlib.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/carro.p1.d ${OBJECTDIR}/USARTlib.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/carro.p1 ${OBJECTDIR}/LibreriaMicros.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/carro.p1.d ${OBJECTDIR}/LibreriaMicros.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/carro.p1 ${OBJECTDIR}/USARTlib.p1
+OBJECTFILES=${OBJECTDIR}/carro.p1 ${OBJECTDIR}/LibreriaMicros.p1
 
 # Source Files
-SOURCEFILES=carro.c USARTlib.c
+SOURCEFILES=carro.c LibreriaMicros.c
 
 
 
@@ -102,13 +102,13 @@ ${OBJECTDIR}/carro.p1: carro.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/carro.d ${OBJECTDIR}/carro.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/carro.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/USARTlib.p1: USARTlib.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/LibreriaMicros.p1: LibreriaMicros.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/USARTlib.p1.d 
-	@${RM} ${OBJECTDIR}/USARTlib.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/USARTlib.p1 USARTlib.c 
-	@-${MV} ${OBJECTDIR}/USARTlib.d ${OBJECTDIR}/USARTlib.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/USARTlib.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	@${RM} ${OBJECTDIR}/LibreriaMicros.p1.d 
+	@${RM} ${OBJECTDIR}/LibreriaMicros.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/LibreriaMicros.p1 LibreriaMicros.c 
+	@-${MV} ${OBJECTDIR}/LibreriaMicros.d ${OBJECTDIR}/LibreriaMicros.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/LibreriaMicros.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/carro.p1: carro.c  nbproject/Makefile-${CND_CONF}.mk
@@ -119,13 +119,13 @@ ${OBJECTDIR}/carro.p1: carro.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/carro.d ${OBJECTDIR}/carro.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/carro.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/USARTlib.p1: USARTlib.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/LibreriaMicros.p1: LibreriaMicros.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/USARTlib.p1.d 
-	@${RM} ${OBJECTDIR}/USARTlib.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/USARTlib.p1 USARTlib.c 
-	@-${MV} ${OBJECTDIR}/USARTlib.d ${OBJECTDIR}/USARTlib.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/USARTlib.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	@${RM} ${OBJECTDIR}/LibreriaMicros.p1.d 
+	@${RM} ${OBJECTDIR}/LibreriaMicros.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/LibreriaMicros.p1 LibreriaMicros.c 
+	@-${MV} ${OBJECTDIR}/LibreriaMicros.d ${OBJECTDIR}/LibreriaMicros.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/LibreriaMicros.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
