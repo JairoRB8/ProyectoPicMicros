@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>ProyectoMicros</name>
+            <creation-uuid>a339d659-e8dd-4882-bcf9-d94bdc8fe935</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList/>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>adelante</word>
+            <word>apagar</word>
+            <word>atrás</word>
+            <word>derecha</word>
+            <word>izquierda</word>
+            <word>luces</word>
+            <word>modo</word>
+            <word>motores</word>
+            <word>prescaler</word>
+            <word>velocidad</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>
