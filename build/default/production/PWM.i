@@ -1,4 +1,4 @@
-# 1 "USARTlib.c"
+# 1 "PWM.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "USARTlib.c" 2
+# 1 "PWM.c" 2
+
+
 # 1 "D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5623,52 +5625,73 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\xc.h" 2 3
-# 1 "USARTlib.c" 2
-
-# 1 "./USARTlib.h" 1
+# 3 "PWM.c" 2
 
 
+# 1 "./PWM.h" 1
+# 35 "./PWM.h"
+void PWM_Init();
+
+void PWM_Speed(char speed);
+# 5 "PWM.c" 2
+# 17 "PWM.c"
+void PWM_Init(){
+
+    TRISCbits.RC2 = 1;
+    PR2 = 124;
+
+    P1M1 = 0;
+    P1M0 = 0;
+    CCP1M3 = 1;
+    CCP1M2 = 1;
+    CCP1M1 = 0;
+    CCP1M0 = 0;
+
+    CCPR1L = 0;
+    DC1B1 = 0;
 
 
+    TMR2ON = 0;
+    TMR2IF = 0;
+    T2CKPS1 = 1;
+    TMR2ON = 1;
 
-
-
-
-void USART_Init(long baud);
-void USART_Tx(char data);
-char USART_Rx();
-# 2 "USARTlib.c" 2
-
-
-
-
-void USART_Init(long baud){
-
-    TRISCbits.RC6 = 0;
-    TRISCbits.RC7 = 1;
-
-
-    SPBRG = (unsigned char)((8000000L/baud)/64)-1;
-
-
-    TXSTAbits.BRGH = 0;
-    TXSTAbits.SYNC = 0;
-    RCSTAbits.SPEN = 1;
-
-
-    TXSTAbits.TX9 = 0;
-    TXSTAbits.TXEN = 1;
-
-
-    RCSTAbits.RC9 = 0;
-    RCSTAbits.CREN = 1;
+    while(!TMR2IF){}
+    TRISCbits.RC2 = 0;
+    ECCPASE = 0;
 }
 
-void USART_Tx(char data){
-    TXREG = data;
-}
+void PWM_Speed(char speed){
+    switch(speed){
+        case 0:
+            CCPR1L = 0;
+            DC1B0 = 0;
+            DC1B1 = 0;
+            break;
+        case 1:
+            CCPR1L = 125>>2;
+            DC1B0 = 125&0b1;
+            DC1B1 = (125&0b10)>>1;
+            break;
+        case 2:
+            CCPR1L = 250>>2;
+            DC1B0 = 250&0b1;
+            DC1B1 = (250&0b10)>>1;
+            break;
+        case 3:
+            CCPR1L = 375>>2;
+            DC1B0 = 375&0b1;
+            DC1B1 = (375&0b10)>>1;
+            break;
+        case 4:
+            CCPR1L = 499>>2;
+            DC1B0 = 500&0b1;
+            DC1B1 = (500&0b10)>>1;
+            break;
+        default:
+            CCPR1L = 0;
+            DC1B0 = 0;
+            DC1B1 = 0;
+    }
 
-char USART_Rx(){
-    while((!RCIF)){}
-    return RCREG;
 }

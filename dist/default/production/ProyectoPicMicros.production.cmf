@@ -1,0 +1,546 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\david\AppData\Local\Temp\sij0.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$dist/default/production\ProyectoPicMicros.production.o
+cinit CODE 0 3C2 3C2 1A 1
+idloc IDLOC 5 200000 200000 8 1
+intcode_body CODE 0 356 356 38 1
+text0 CODE 0 12 12 14A 1
+text1 CODE 0 3DC 3DC 16 1
+text2 CODE 0 3F2 3F2 12 1
+text3 CODE 0 2E6 2E6 70 1
+text4 CODE 0 15C 15C 10C 1
+text5 CODE 0 268 268 7E 1
+text6 CODE 0 38E 38E 34 1
+cstackCOMRAM COMRAM 1 1 1 18 1
+temp COMRAM 1 1F 1F 1 1
+bitbssCOMRAM COMRAM 1 F0 1E 1 1
+intcode CODE 0 8 8 6 1
+bssCOMRAM COMRAM 1 19 19 5 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 404-7FFF 1
+STACK 60-7FF 1
+SMALLCONST 800-7FFF 1
+CODE 4-7 1
+CODE 404-7FFF 1
+BIGRAM 20-7FF 1
+COMRAM 20-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ProyectoPicMicros.production.o
+8 intcode CODE >2771:C:\Users\david\AppData\Local\Temp\sij0.s
+8 intcode CODE >94:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+356 intcode_body CODE >94:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+358 intcode_body CODE >95:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+366 intcode_body CODE >96:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+36A intcode_body CODE >97:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+37E intcode_body CODE >98:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+380 intcode_body CODE >99:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+388 intcode_body CODE >101:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+38A intcode_body CODE >103:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+38E text6 CODE >17:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+38E text6 CODE >19:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+390 text6 CODE >20:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+394 text6 CODE >22:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+396 text6 CODE >23:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+398 text6 CODE >24:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+39A text6 CODE >25:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+39C text6 CODE >26:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+39E text6 CODE >27:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3A0 text6 CODE >29:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3A4 text6 CODE >30:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3A6 text6 CODE >33:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3A8 text6 CODE >34:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3AA text6 CODE >35:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3AC text6 CODE >36:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3AE text6 CODE >38:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3BC text6 CODE >39:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3BE text6 CODE >40:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+3C0 text6 CODE >41:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+268 text5 CODE >43:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+26A text5 CODE >44:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+26E text5 CODE >46:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+272 text5 CODE >47:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+274 text5 CODE >48:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+276 text5 CODE >49:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+27A text5 CODE >51:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+27E text5 CODE >52:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+284 text5 CODE >56:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+288 text5 CODE >57:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+28A text5 CODE >58:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+28C text5 CODE >59:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+290 text5 CODE >61:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+294 text5 CODE >62:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+29A text5 CODE >66:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+2A2 text5 CODE >74:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+2E4 text5 CODE >76:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\PWM.c
+15C text4 CODE >7:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+15C text4 CODE >13:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+160 text4 CODE >14:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+16E text4 CODE >15:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+17E text4 CODE >16:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+182 text4 CODE >18:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+190 text4 CODE >19:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1A0 text4 CODE >20:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1A4 text4 CODE >22:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1B4 text4 CODE >23:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1CA text4 CODE >24:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1CE text4 CODE >25:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1D2 text4 CODE >26:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1DC text4 CODE >27:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1DE text4 CODE >25:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1EC text4 CODE >30:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+1F6 text4 CODE >31:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+214 text4 CODE >32:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+224 text4 CODE >33:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+226 text4 CODE >35:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+230 text4 CODE >36:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+236 text4 CODE >38:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+246 text4 CODE >39:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+256 text4 CODE >40:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+266 text4 CODE >41:D:\Microchip\xc8\v2.20\pic\sources\c99\common\aldiv.c
+2E6 text3 CODE >6:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+2E6 text3 CODE >8:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+2E8 text3 CODE >9:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+2EA text3 CODE >12:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+346 text3 CODE >15:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+348 text3 CODE >16:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+34A text3 CODE >17:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+34C text3 CODE >20:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+34E text3 CODE >21:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+350 text3 CODE >24:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+352 text3 CODE >25:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+354 text3 CODE >26:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3F2 text2 CODE >32:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3F2 text2 CODE >33:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+400 text2 CODE >34:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+402 text2 CODE >35:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3DC text1 CODE >37:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3DC text1 CODE >38:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3E4 text1 CODE >39:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3E6 text1 CODE >40:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3E8 text1 CODE >41:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3EA text1 CODE >42:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3EC text1 CODE >43:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3EE text1 CODE >44:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+3F0 text1 CODE >45:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\LibreriaMicros.c
+12 text0 CODE >18:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+12 text0 CODE >19:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+26 text0 CODE >20:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+2A text0 CODE >21:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+2E text0 CODE >22:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+32 text0 CODE >23:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+34 text0 CODE >24:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+36 text0 CODE >25:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+38 text0 CODE >26:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+3A text0 CODE >27:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+3C text0 CODE >28:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+3E text0 CODE >31:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+40 text0 CODE >32:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+44 text0 CODE >34:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+4A text0 CODE >35:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+56 text0 CODE >36:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+58 text0 CODE >37:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+5C text0 CODE >38:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+5C text0 CODE >39:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+5E text0 CODE >40:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+60 text0 CODE >41:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+62 text0 CODE >42:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+64 text0 CODE >43:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+68 text0 CODE >44:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+68 text0 CODE >45:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+6A text0 CODE >46:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+6C text0 CODE >47:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+6E text0 CODE >48:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+70 text0 CODE >49:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+74 text0 CODE >50:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+74 text0 CODE >51:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+76 text0 CODE >52:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+78 text0 CODE >53:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+7A text0 CODE >54:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+7C text0 CODE >55:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+80 text0 CODE >56:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+80 text0 CODE >57:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+82 text0 CODE >58:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+84 text0 CODE >59:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+86 text0 CODE >60:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+88 text0 CODE >61:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+8C text0 CODE >63:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+8E text0 CODE >64:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+92 text0 CODE >66:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+94 text0 CODE >67:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+A2 text0 CODE >68:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+A8 text0 CODE >72:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+AE text0 CODE >73:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+B2 text0 CODE >75:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+B8 text0 CODE >76:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+BC text0 CODE >78:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+C2 text0 CODE >79:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+C6 text0 CODE >81:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+CC text0 CODE >82:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+D0 text0 CODE >84:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+D6 text0 CODE >85:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+DA text0 CODE >87:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+E0 text0 CODE >89:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+E4 text0 CODE >90:D:\Instituto Tecnologico de Costa Rica\2020 1 semestre\Microsprocesadores y microcontroladores\PIC\ProyectoPicMicros\carro.c
+3C2 cinit CODE >1219:C:\Users\david\AppData\Local\Temp\sij0.s
+3C2 cinit CODE >1221:C:\Users\david\AppData\Local\Temp\sij0.s
+3C2 cinit CODE >1224:C:\Users\david\AppData\Local\Temp\sij0.s
+3C2 cinit CODE >1249:C:\Users\david\AppData\Local\Temp\sij0.s
+3C4 cinit CODE >1252:C:\Users\david\AppData\Local\Temp\sij0.s
+3C6 cinit CODE >1253:C:\Users\david\AppData\Local\Temp\sij0.s
+3C8 cinit CODE >1254:C:\Users\david\AppData\Local\Temp\sij0.s
+3CA cinit CODE >1255:C:\Users\david\AppData\Local\Temp\sij0.s
+3CC cinit CODE >1256:C:\Users\david\AppData\Local\Temp\sij0.s
+3CE cinit CODE >1262:C:\Users\david\AppData\Local\Temp\sij0.s
+3CE cinit CODE >1264:C:\Users\david\AppData\Local\Temp\sij0.s
+3D0 cinit CODE >1265:C:\Users\david\AppData\Local\Temp\sij0.s
+3D2 cinit CODE >1267:C:\Users\david\AppData\Local\Temp\sij0.s
+3D4 cinit CODE >1268:C:\Users\david\AppData\Local\Temp\sij0.s
+3D6 cinit CODE >1269:C:\Users\david\AppData\Local\Temp\sij0.s
+3D8 cinit CODE >1270:C:\Users\david\AppData\Local\Temp\sij0.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\ProyectoPicMicros.production.o
+__Hspace_0 800 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hspace_1 F1 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ProyectoPicMicros.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\david\AppData\Local\Temp\sij0.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ProyectoPicMicros.production.o
+_T1CONbits FCD 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_timer_init 3DC 0 CODE 0 text1 dist/default/production\ProyectoPicMicros.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\ProyectoPicMicros.production.o
+_LATA F89 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_LATC F8B 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_P1M0 7DEE 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_P1M1 7DEF 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_RCIF 7CF5 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+___sp 0 0 STACK 2 stack C:\Users\david\AppData\Local\Temp\sij0.o
+_main 12 0 CODE 0 text0 dist/default/production\ProyectoPicMicros.production.o
+btemp 1F 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+start E 0 CODE 0 init C:\Users\david\AppData\Local\Temp\sij0.o
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__size_of_USART_Rx 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__end_of_USART_Init 356 0 CODE 0 text3 dist/default/production\ProyectoPicMicros.production.o
+__Hpowerup E 0 CODE 0 powerup dist/default/production\ProyectoPicMicros.production.o
+__pbitbssCOMRAM F0 -D2 COMRAM 1 bitbssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+ttemp5 20 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+ttemp6 23 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+ttemp7 27 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+__accesstop 60 0 ABS 0 - C:\Users\david\AppData\Local\Temp\sij0.o
+intlevel0 0 0 CODE 0 text C:\Users\david\AppData\Local\Temp\sij0.o
+intlevel1 0 0 CODE 0 text C:\Users\david\AppData\Local\Temp\sij0.o
+intlevel2 0 0 CODE 0 text C:\Users\david\AppData\Local\Temp\sij0.o
+intlevel3 0 0 CODE 0 text C:\Users\david\AppData\Local\Temp\sij0.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+___aldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ProyectoPicMicros.production.o
+wtemp8 20 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\ProyectoPicMicros.production.o
+_USART_Init$1372 13 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+___aldiv@sign A 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\ProyectoPicMicros.production.o
+__end_of_timer_init 3F2 0 CODE 0 text1 dist/default/production\ProyectoPicMicros.production.o
+_USART_Rx 3F2 0 CODE 0 text2 dist/default/production\ProyectoPicMicros.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\david\AppData\Local\Temp\sij0.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\david\AppData\Local\Temp\sij0.o
+_CCP1M0 7DE8 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_CCP1M1 7DE9 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_CCP1M2 7DEA 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_CCP1M3 7DEB 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_CCPR1L FBE 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\ProyectoPicMicros.production.o
+__end_of_USART_Rx 404 0 CODE 0 text2 dist/default/production\ProyectoPicMicros.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ProyectoPicMicros.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\ProyectoPicMicros.production.o
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\ProyectoPicMicros.production.o
+__end_of___aldiv 268 0 CODE 0 text4 dist/default/production\ProyectoPicMicros.production.o
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\ProyectoPicMicros.production.o
+start_initialization 3C2 0 CODE 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ProyectoPicMicros.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_TRISBbits F93 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+___aldiv@quotient B 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_ledEncendida F0 -D2 COMRAM 1 bitbssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+_TMR2IF 7CF1 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_TMR2ON 7E52 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__end_of_PWM_Speed 2E6 0 CODE 0 text5 dist/default/production\ProyectoPicMicros.production.o
+_numeroComando 19 0 COMRAM 1 bssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__size_of_PWM_Speed 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__size_of_USART_Init 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\ProyectoPicMicros.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\ProyectoPicMicros.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\ProyectoPicMicros.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\ProyectoPicMicros.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\ProyectoPicMicros.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\ProyectoPicMicros.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\ProyectoPicMicros.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\ProyectoPicMicros.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\ProyectoPicMicros.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\ProyectoPicMicros.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\ProyectoPicMicros.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\ProyectoPicMicros.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\ProyectoPicMicros.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\ProyectoPicMicros.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\ProyectoPicMicros.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\ProyectoPicMicros.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\ProyectoPicMicros.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\ProyectoPicMicros.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\ProyectoPicMicros.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\ProyectoPicMicros.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\ProyectoPicMicros.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\ProyectoPicMicros.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ProyectoPicMicros.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\ProyectoPicMicros.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\david\AppData\Local\Temp\sij0.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\ProyectoPicMicros.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\ProyectoPicMicros.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\ProyectoPicMicros.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\ProyectoPicMicros.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\ProyectoPicMicros.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\ProyectoPicMicros.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\ProyectoPicMicros.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\ProyectoPicMicros.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\ProyectoPicMicros.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\ProyectoPicMicros.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\ProyectoPicMicros.production.o
+_PWM_Speed 268 0 CODE 0 text5 dist/default/production\ProyectoPicMicros.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\ProyectoPicMicros.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\ProyectoPicMicros.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\ProyectoPicMicros.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\ProyectoPicMicros.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\ProyectoPicMicros.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\ProyectoPicMicros.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\ProyectoPicMicros.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\ProyectoPicMicros.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\ProyectoPicMicros.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\ProyectoPicMicros.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\ProyectoPicMicros.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\ProyectoPicMicros.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\ProyectoPicMicros.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\ProyectoPicMicros.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\ProyectoPicMicros.production.o
+_PORTAbits F80 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\ProyectoPicMicros.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\ProyectoPicMicros.production.o
+__Hinit 12 0 CODE 0 init dist/default/production\ProyectoPicMicros.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\ProyectoPicMicros.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\ProyectoPicMicros.production.o
+__Htemp 20 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+__Htext 0 0 ABS 0 text dist/default/production\ProyectoPicMicros.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\ProyectoPicMicros.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\ProyectoPicMicros.production.o
+__Linit E 0 CODE 0 init dist/default/production\ProyectoPicMicros.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\ProyectoPicMicros.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\ProyectoPicMicros.production.o
+__Ltemp 1F 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\ProyectoPicMicros.production.o
+int$flags 1F 0 COMRAM 1 temp dist/default/production\ProyectoPicMicros.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\ProyectoPicMicros.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\ProyectoPicMicros.production.o
+_ISR 8 0 CODE 0 intcode dist/default/production\ProyectoPicMicros.production.o
+_PR2 FCB 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__S0 404 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__S1 20 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__S2 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__S4 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__S5 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__size_of_timer_init 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+USART_Init@baud F 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ProyectoPicMicros.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\ProyectoPicMicros.production.o
+_ECCPASE 7DB7 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__end_of_ISR 38E 0 CODE 0 intcode_body dist/default/production\ProyectoPicMicros.production.o
+int_func 356 0 CODE 0 intcode_body dist/default/production\ProyectoPicMicros.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\ProyectoPicMicros.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\ProyectoPicMicros.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\ProyectoPicMicros.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\ProyectoPicMicros.production.o
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_PIE1bits F9D 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+___aldiv 15C 0 CODE 0 text4 dist/default/production\ProyectoPicMicros.production.o
+__pintcode_body 356 0 CODE 0 intcode_body dist/default/production\ProyectoPicMicros.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ProyectoPicMicros.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\ProyectoPicMicros.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\ProyectoPicMicros.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\ProyectoPicMicros.production.o
+_LATBbits F8A 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\ProyectoPicMicros.production.o
+PWM_Speed@speed 3 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\ProyectoPicMicros.production.o
+stackhi 7FF 0 ABS 0 - C:\Users\david\AppData\Local\Temp\sij0.o
+stacklo 60 0 ABS 0 - C:\Users\david\AppData\Local\Temp\sij0.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\ProyectoPicMicros.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\ProyectoPicMicros.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\ProyectoPicMicros.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__pbssCOMRAM 19 0 COMRAM 1 bssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__HbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+end_of_initialization 3CE 0 CODE 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\ProyectoPicMicros.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\ProyectoPicMicros.production.o
+?___aldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\ProyectoPicMicros.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\ProyectoPicMicros.production.o
+__size_of_PWM_Init 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\ProyectoPicMicros.production.o
+__pcinit 3C2 0 CODE 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__ptext0 12 0 CODE 0 text0 dist/default/production\ProyectoPicMicros.production.o
+__ptext1 3DC 0 CODE 0 text1 dist/default/production\ProyectoPicMicros.production.o
+__ptext2 3F2 0 CODE 0 text2 dist/default/production\ProyectoPicMicros.production.o
+__ptext3 2E6 0 CODE 0 text3 dist/default/production\ProyectoPicMicros.production.o
+__ptext4 15C 0 CODE 0 text4 dist/default/production\ProyectoPicMicros.production.o
+__ptext5 268 0 CODE 0 text5 dist/default/production\ProyectoPicMicros.production.o
+__ptext6 38E 0 CODE 0 text6 dist/default/production\ProyectoPicMicros.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\ProyectoPicMicros.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\david\AppData\Local\Temp\sij0.o
+___aldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Lpowerup E 0 CODE 0 powerup dist/default/production\ProyectoPicMicros.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ProyectoPicMicros.production.o
+_comandoRecibido 1D 0 COMRAM 1 bssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\ProyectoPicMicros.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ProyectoPicMicros.production.o
+__end_of__initialization 3CE 0 CODE 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\ProyectoPicMicros.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\ProyectoPicMicros.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_T2CKPS1 7E51 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_PWM_Init 38E 0 CODE 0 text6 dist/default/production\ProyectoPicMicros.production.o
+___aldiv@counter 9 0 COMRAM 1 cstackCOMRAM dist/default/production\ProyectoPicMicros.production.o
+__end_of_main 15C 0 CODE 0 text0 dist/default/production\ProyectoPicMicros.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\ProyectoPicMicros.production.o
+_DC1B0 7DEC 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_DC1B1 7DED 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_TMR1H FCF 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_TMR1L FCE 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__end_of_PWM_Init 3C2 0 CODE 0 text6 dist/default/production\ProyectoPicMicros.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\ProyectoPicMicros.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\ProyectoPicMicros.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\ProyectoPicMicros.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\ProyectoPicMicros.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\ProyectoPicMicros.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\ProyectoPicMicros.production.o
+__size_of_ISR 0 0 ABS 0 - dist/default/production\ProyectoPicMicros.production.o
+__LbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+_contador 1B 0 COMRAM 1 bssCOMRAM dist/default/production\ProyectoPicMicros.production.o
+_USART_Init 2E6 0 CODE 0 text3 dist/default/production\ProyectoPicMicros.production.o
+__initialization 3C2 0 CODE 0 cinit dist/default/production\ProyectoPicMicros.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\ProyectoPicMicros.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\ProyectoPicMicros.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\ProyectoPicMicros.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ProyectoPicMicros.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\ProyectoPicMicros.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMRAM 1 1 1 1F 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 3FC 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

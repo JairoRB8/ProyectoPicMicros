@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ProyectoMicros.X
+PROJECTNAME=ProyectoPicMicros
 
 # Active Configuration
 DEFAULTCONF=default

@@ -54,7 +54,7 @@ void PWM_Speed(char speed){
             break;
         case 2:
             CCPR1L = 250>>2;
-            DC1B0 = 250&0b11;
+            DC1B0 = 250&0b1;
             DC1B1 = (250&0b10)>>1;
             break;
         case 3:
