@@ -38,8 +38,9 @@ void timer_init(){
     TMR1H = TMR1L = 0; //reset
     T1CONbits.T1CKPS1 = 0; //prescaler 1
     T1CONbits.T1CKPS0 = 0;
+    TMR1IF = 0;
     PIE1bits.TMR1IE = 1; //enable interrupt
+    IPR1bits.TMR1IP = 1;
     T1CONbits.TMR1ON = 0; //enciende el timer
-    INTCONbits.PEIE = 1; //habilita interrupts perifericos
-    INTCONbits.GIE = 1; //habilita interrupts
+    
 }

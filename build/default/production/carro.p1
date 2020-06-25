@@ -1,5 +1,8 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
+"6581 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6581: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
 "9 ./LibreriaMicros.h
 [; ;./LibreriaMicros.h: 9: void USART_Init(long baud);
 [v _USART_Init `(v ~T0 @X0 0 ef1`l ]
@@ -12,21 +15,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2973
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2973: extern volatile unsigned char LATA __attribute__((address(0xF89)));
 [v _LATA `Vuc ~T0 @X0 0 e@3977 ]
-"3636
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3636:     struct {
-[s S148 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S148 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"3646
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3646:     struct {
-[s S149 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S149 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"3635
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3635: typedef union {
-[u S147 `S148 1 `S149 1 ]
-[n S147 . . . ]
-"3657
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
-[v _TRISBbits `VS147 ~T0 @X0 0 e@3987 ]
 "3438
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3438:     struct {
 [s S142 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -42,6 +30,46 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3457
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3457: extern volatile TRISAbits_t TRISAbits __attribute__((address(0xF92)));
 [v _TRISAbits `VS141 ~T0 @X0 0 e@3986 ]
+"3636
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3636:     struct {
+[s S148 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S148 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"3646
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3646:     struct {
+[s S149 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S149 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"3635
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3635: typedef union {
+[u S147 `S148 1 `S149 1 ]
+[n S147 . . . ]
+"3657
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
+[v _TRISBbits `VS147 ~T0 @X0 0 e@3987 ]
+"8511
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8511:     struct {
+[s S356 :7 `uc 1 :1 `uc 1 ]
+[n S356 . . NOT_RBPU ]
+"8515
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8515:     struct {
+[s S357 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S357 . RBIP . TMR0IP . INTEDG2 INTEDG1 INTEDG0 nRBPU ]
+"8525
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8525:     struct {
+[s S358 :2 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S358 . . T0IP . RBPU ]
+"8510
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8510: typedef union {
+[u S355 `S356 1 `S357 1 `S358 1 ]
+[n S355 . . . . ]
+"8532
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8532: extern volatile INTCON2bits_t INTCON2bits __attribute__((address(0xFF1)));
+[v _INTCON2bits `VS355 ~T0 @X0 0 e@4081 ]
+"9828
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 9828: extern volatile __bit INT0IF __attribute__((address(0x7F91)));
+[v _INT0IF `Vb ~T0 @X0 0 e@32657 ]
+"9825
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 9825: extern volatile __bit INT0IE __attribute__((address(0x7F94)));
+[v _INT0IE `Vb ~T0 @X0 0 e@32660 ]
 "3079
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3079:     struct {
 [s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -60,36 +88,82 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 ./LibreriaMicros.h
 [; ;./LibreriaMicros.h: 12: void timer_init();
 [v _timer_init `(v ~T0 @X0 0 e? ]
-"11
+"7545 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7545:     struct {
+[s S322 :1 `uc 1 ]
+[n S322 . NOT_BOR ]
+"7548
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7548:     struct {
+[s S323 :1 `uc 1 :1 `uc 1 ]
+[n S323 . . NOT_POR ]
+"7552
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7552:     struct {
+[s S324 :2 `uc 1 :1 `uc 1 ]
+[n S324 . . NOT_PD ]
+"7556
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7556:     struct {
+[s S325 :3 `uc 1 :1 `uc 1 ]
+[n S325 . . NOT_TO ]
+"7560
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7560:     struct {
+[s S326 :4 `uc 1 :1 `uc 1 ]
+[n S326 . . NOT_RI ]
+"7564
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7564:     struct {
+[s S327 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S327 . nBOR nPOR nPD nTO nRI . SBOREN IPEN ]
+"7574
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7574:     struct {
+[s S328 :7 `uc 1 :1 `uc 1 ]
+[n S328 . . NOT_IPEN ]
+"7578
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7578:     struct {
+[s S329 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S329 . BOR POR PD TO RI . nIPEN ]
+"7544
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7544: typedef union {
+[u S321 `S322 1 `S323 1 `S324 1 `S325 1 `S326 1 `S327 1 `S328 1 `S329 1 ]
+[n S321 . . . . . . . . . ]
+"7588
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7588: extern volatile RCONbits_t RCONbits __attribute__((address(0xFD0)));
+[v _RCONbits `VS321 ~T0 @X0 0 e@4048 ]
+"8588
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8588:     struct {
+[s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S360 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"8598
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8598:     struct {
+[s S361 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S361 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"8608
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8608:     struct {
+[s S362 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S362 . . GIEL GIEH ]
+"8587
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8587: typedef union {
+[u S359 `S360 1 `S361 1 `S362 1 ]
+[n S359 . . . . ]
+"8614
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8614: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS359 ~T0 @X0 0 e@4082 ]
+"11 ./LibreriaMicros.h
 [; ;./LibreriaMicros.h: 11: char USART_Rx();
 [v _USART_Rx `(uc ~T0 @X0 0 e? ]
-"2320 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2320:     struct {
-[s S101 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S101 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
-"2329
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2329:     struct {
-[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S102 . AN0 AN1 AN2 AN3 T0CKI AN4 OSC2 ]
-"2338
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2338:     struct {
-[s S103 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S103 . . VREFM VREFP . LVDIN ]
-"2345
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2345:     struct {
-[s S104 :5 `uc 1 :1 `uc 1 ]
-[n S104 . . HLVDIN ]
-"2349
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2349:     struct {
-[s S105 :1 `uc 1 ]
-[n S105 . ULPWUIN ]
-"2319
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2319: typedef union {
-[u S100 `S101 1 `S102 1 `S103 1 `S104 1 `S105 1 ]
-[n S100 . . . . . . ]
-"2353
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2353: extern volatile PORTAbits_t PORTAbits __attribute__((address(0xF80)));
-[v _PORTAbits `VS100 ~T0 @X0 0 e@3968 ]
+"2979 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2979:     struct {
+[s S127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S127 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+"2988
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2988:     struct {
+[s S128 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S128 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 ]
+"2978
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2978: typedef union {
+[u S126 `S127 1 `S128 1 ]
+[n S126 . . . ]
+"2998
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2998: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
+[v _LATAbits `VS126 ~T0 @X0 0 e@3977 ]
 "7421
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7421:     struct {
 [s S317 :2 `uc 1 :1 `uc 1 ]
@@ -136,7 +210,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./PWM.h: 37: void PWM_Speed(char speed);
 [v _PWM_Speed `(v ~T0 @X0 0 ef1`uc ]
 [t ~ __interrupt . k ]
-[t T36 __interrupt ]
+[t T36 __interrupt low_priority ]
 "4474 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4474:     struct {
 [s S178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -152,6 +226,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4492
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4492: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
 [v _PIR1bits `VS177 ~T0 @X0 0 e@3998 ]
+[t T37 __interrupt high_priority ]
 "54 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -680,285 +755,373 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _ledEncendida
 -> -> 0 `i `b
 ]
-[v $root$_main `(v ~T0 @X0 0 e ]
 "18
-[; ;carro.c: 18: void main(void) {
+[; ;carro.c: 18: volatile __bit emergencia = 0;
+[v _emergencia `Vb ~T0 @X0 1 e ]
+[i _emergencia
+-> -> 0 `i `b
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"20
+[; ;carro.c: 20: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"19
-[; ;carro.c: 19:     USART_Init(9600);
-[e ( _USART_Init (1 -> -> 9600 `i `l ]
-"20
-[; ;carro.c: 20:     PWM_Init();
-[e ( _PWM_Init ..  ]
 "21
-[; ;carro.c: 21:     LATC=0;
-[e = _LATC -> -> 0 `i `uc ]
+[; ;carro.c: 21:     ADCON1 = 0b1111;
+[e = _ADCON1 -> -> 15 `i `uc ]
 "22
-[; ;carro.c: 22:     LATA=0;
-[e = _LATA -> -> 0 `i `uc ]
+[; ;carro.c: 22:     USART_Init(9600);
+[e ( _USART_Init (1 -> -> 9600 `i `l ]
 "23
-[; ;carro.c: 23:     TRISBbits.RB0 = 0;
-[e = . . _TRISBbits 1 0 -> -> 0 `i `uc ]
+[; ;carro.c: 23:     PWM_Init();
+[e ( _PWM_Init ..  ]
 "24
-[; ;carro.c: 24:     TRISBbits.RB1 = 0;
-[e = . . _TRISBbits 1 1 -> -> 0 `i `uc ]
+[; ;carro.c: 24:     LATC=0;
+[e = _LATC -> -> 0 `i `uc ]
 "25
-[; ;carro.c: 25:     TRISBbits.RB2 = 0;
-[e = . . _TRISBbits 1 2 -> -> 0 `i `uc ]
+[; ;carro.c: 25:     LATA=0;
+[e = _LATA -> -> 0 `i `uc ]
 "26
-[; ;carro.c: 26:     TRISBbits.RB3 = 0;
-[e = . . _TRISBbits 1 3 -> -> 0 `i `uc ]
+[; ;carro.c: 26:     TRISAbits.RA6 = 0;
+[e = . . _TRISAbits 1 6 -> -> 0 `i `uc ]
 "27
-[; ;carro.c: 27:     TRISBbits.RB4 = 0;
-[e = . . _TRISBbits 1 4 -> -> 0 `i `uc ]
+[; ;carro.c: 27:     TRISBbits.RB1 = 0;
+[e = . . _TRISBbits 1 1 -> -> 0 `i `uc ]
 "28
-[; ;carro.c: 28:     TRISAbits.RA1 = 0;
-[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+[; ;carro.c: 28:     TRISBbits.RB2 = 0;
+[e = . . _TRISBbits 1 2 -> -> 0 `i `uc ]
+"29
+[; ;carro.c: 29:     TRISBbits.RB3 = 0;
+[e = . . _TRISBbits 1 3 -> -> 0 `i `uc ]
+"30
+[; ;carro.c: 30:     TRISBbits.RB4 = 0;
+[e = . . _TRISBbits 1 4 -> -> 0 `i `uc ]
 "31
-[; ;carro.c: 31:     LATBbits.LB4 = 1;
+[; ;carro.c: 31:     TRISAbits.RA1 = 0;
+[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+"34
+[; ;carro.c: 34:     INTCON2bits.RBPU = 1;
+[e = . . _INTCON2bits 2 3 -> -> 1 `i `uc ]
+"35
+[; ;carro.c: 35:     TRISBbits.RB0 = 1;
+[e = . . _TRISBbits 1 0 -> -> 1 `i `uc ]
+"36
+[; ;carro.c: 36:     INT0IF = 0;
+[e = _INT0IF -> -> 0 `i `b ]
+"37
+[; ;carro.c: 37:     INT0IE = 1;
+[e = _INT0IE -> -> 1 `i `b ]
+"41
+[; ;carro.c: 41:     LATBbits.LB4 = 1;
 [e = . . _LATBbits 1 4 -> -> 1 `i `uc ]
-"32
-[; ;carro.c: 32:     timer_init();
+"42
+[; ;carro.c: 42:     timer_init();
 [e ( _timer_init ..  ]
-"33
-[; ;carro.c: 33:     while(1){
+"45
+[; ;carro.c: 45:     RCONbits.IPEN = 1;
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+"46
+[; ;carro.c: 46:     INTCONbits.GIEH = 1;
+[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
+"47
+[; ;carro.c: 47:     INTCONbits.GIEL = 1;
+[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
+"49
+[; ;carro.c: 49:     while(1){
 [e :U 369 ]
 {
-"34
-[; ;carro.c: 34:         comandoRecibido = USART_Rx();
-[e = _comandoRecibido ( _USART_Rx ..  ]
-"35
-[; ;carro.c: 35:         numeroComando = comandoRecibido - '0';
-[e = _numeroComando -> - -> _comandoRecibido `ui -> 48 `ui `i ]
-"36
-[; ;carro.c: 36:         PORTAbits.RA1 = 1;
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
-"37
-[; ;carro.c: 37:         switch (numeroComando){
-[e $U 372  ]
-{
-"38
-[; ;carro.c: 38:             case 0:
-[e :U 373 ]
-"39
-[; ;carro.c: 39:                 LATBbits.LB0 = 1;
-[e = . . _LATBbits 1 0 -> -> 1 `i `uc ]
-"40
-[; ;carro.c: 40:                 LATBbits.LB1 = 0;
-[e = . . _LATBbits 1 1 -> -> 0 `i `uc ]
-"41
-[; ;carro.c: 41:                 LATBbits.LB2 = 1;
-[e = . . _LATBbits 1 2 -> -> 1 `i `uc ]
-"42
-[; ;carro.c: 42:                 LATBbits.LB3 = 0;
-[e = . . _LATBbits 1 3 -> -> 0 `i `uc ]
-"43
-[; ;carro.c: 43:                 break;
-[e $U 371  ]
-"44
-[; ;carro.c: 44:             case 1:
-[e :U 374 ]
-"45
-[; ;carro.c: 45:                 LATBbits.LB0 = 0;
-[e = . . _LATBbits 1 0 -> -> 0 `i `uc ]
-"46
-[; ;carro.c: 46:                 LATBbits.LB1 = 1;
-[e = . . _LATBbits 1 1 -> -> 1 `i `uc ]
-"47
-[; ;carro.c: 47:                 LATBbits.LB2 = 0;
-[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
-"48
-[; ;carro.c: 48:                 LATBbits.LB3 = 1;
-[e = . . _LATBbits 1 3 -> -> 1 `i `uc ]
-"49
-[; ;carro.c: 49:                 break;
-[e $U 371  ]
 "50
-[; ;carro.c: 50:             case 2:
-[e :U 375 ]
-"51
-[; ;carro.c: 51:                 LATBbits.LB0 = 1;
-[e = . . _LATBbits 1 0 -> -> 1 `i `uc ]
-"52
-[; ;carro.c: 52:                 LATBbits.LB1 = 0;
-[e = . . _LATBbits 1 1 -> -> 0 `i `uc ]
-"53
-[; ;carro.c: 53:                 LATBbits.LB2 = 0;
-[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
-"54
-[; ;carro.c: 54:                 LATBbits.LB3 = 1;
-[e = . . _LATBbits 1 3 -> -> 1 `i `uc ]
-"55
-[; ;carro.c: 55:                 break;
-[e $U 371  ]
-"56
-[; ;carro.c: 56:             case 3:
-[e :U 376 ]
-"57
-[; ;carro.c: 57:                 LATBbits.LB0 = 0;
-[e = . . _LATBbits 1 0 -> -> 0 `i `uc ]
-"58
-[; ;carro.c: 58:                 LATBbits.LB1 = 1;
-[e = . . _LATBbits 1 1 -> -> 1 `i `uc ]
-"59
-[; ;carro.c: 59:                 LATBbits.LB2 = 1;
-[e = . . _LATBbits 1 2 -> -> 1 `i `uc ]
-"60
-[; ;carro.c: 60:                 LATBbits.LB3 = 0;
-[e = . . _LATBbits 1 3 -> -> 0 `i `uc ]
-"61
-[; ;carro.c: 61:                 break;
-[e $U 371  ]
-"62
-[; ;carro.c: 62:             case 4:
-[e :U 377 ]
-"63
-[; ;carro.c: 63:                 TRISBbits.RB4 ^= 1;
-[e =^ . . _TRISBbits 1 4 -> -> 1 `i `Vuc ]
-"64
-[; ;carro.c: 64:                 break;
-[e $U 371  ]
-"65
-[; ;carro.c: 65:             case 5:
-[e :U 378 ]
-"66
-[; ;carro.c: 66:                 T1CONbits.TMR1ON ^= 1;
-[e =^ . . _T1CONbits 1 0 -> -> 1 `i `Vuc ]
-"67
-[; ;carro.c: 67:                 if (PORTBbits.RB4 == 0){
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 379  ]
+[; ;carro.c: 50:         if(emergencia == 0){
+[e $ ! == -> _emergencia `i -> 0 `i 371  ]
 {
+"51
+[; ;carro.c: 51:             comandoRecibido = USART_Rx();
+[e = _comandoRecibido ( _USART_Rx ..  ]
+"52
+[; ;carro.c: 52:             numeroComando = comandoRecibido - '0';
+[e = _numeroComando -> - -> _comandoRecibido `ui -> 48 `ui `i ]
+"53
+[; ;carro.c: 53:             switch (numeroComando){
+[e $U 373  ]
+{
+"54
+[; ;carro.c: 54:                 case 0:
+[e :U 374 ]
+"55
+[; ;carro.c: 55:                     LATAbits.LA6 = 1;
+[e = . . _LATAbits 1 6 -> -> 1 `i `uc ]
+"56
+[; ;carro.c: 56:                     LATBbits.LB1 = 0;
+[e = . . _LATBbits 1 1 -> -> 0 `i `uc ]
+"57
+[; ;carro.c: 57:                     LATBbits.LB2 = 1;
+[e = . . _LATBbits 1 2 -> -> 1 `i `uc ]
+"58
+[; ;carro.c: 58:                     LATBbits.LB3 = 0;
+[e = . . _LATBbits 1 3 -> -> 0 `i `uc ]
+"59
+[; ;carro.c: 59:                     break;
+[e $U 372  ]
+"60
+[; ;carro.c: 60:                 case 1:
+[e :U 375 ]
+"61
+[; ;carro.c: 61:                     LATAbits.LA6 = 0;
+[e = . . _LATAbits 1 6 -> -> 0 `i `uc ]
+"62
+[; ;carro.c: 62:                     LATBbits.LB1 = 1;
+[e = . . _LATBbits 1 1 -> -> 1 `i `uc ]
+"63
+[; ;carro.c: 63:                     LATBbits.LB2 = 0;
+[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
+"64
+[; ;carro.c: 64:                     LATBbits.LB3 = 1;
+[e = . . _LATBbits 1 3 -> -> 1 `i `uc ]
+"65
+[; ;carro.c: 65:                     break;
+[e $U 372  ]
+"66
+[; ;carro.c: 66:                 case 2:
+[e :U 376 ]
+"67
+[; ;carro.c: 67:                     LATAbits.LA6= 1;
+[e = . . _LATAbits 1 6 -> -> 1 `i `uc ]
 "68
-[; ;carro.c: 68:                     LATBbits.LB4 = 1;
-[e = . . _LATBbits 1 4 -> -> 1 `i `uc ]
+[; ;carro.c: 68:                     LATBbits.LB1 = 0;
+[e = . . _LATBbits 1 1 -> -> 0 `i `uc ]
 "69
-[; ;carro.c: 69:                 }
-}
-[e :U 379 ]
+[; ;carro.c: 69:                     LATBbits.LB2 = 0;
+[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
 "70
-[; ;carro.c: 70:                 break;
-[e $U 371  ]
+[; ;carro.c: 70:                     LATBbits.LB3 = 1;
+[e = . . _LATBbits 1 3 -> -> 1 `i `uc ]
 "71
-[; ;carro.c: 71:             case 6:
-[e :U 380 ]
+[; ;carro.c: 71:                     break;
+[e $U 372  ]
 "72
-[; ;carro.c: 72:                 PWM_Speed(0);
-[e ( _PWM_Speed (1 -> -> 0 `i `uc ]
+[; ;carro.c: 72:                 case 3:
+[e :U 377 ]
 "73
-[; ;carro.c: 73:                 break;
-[e $U 371  ]
+[; ;carro.c: 73:                     LATAbits.LA6 = 0;
+[e = . . _LATAbits 1 6 -> -> 0 `i `uc ]
 "74
-[; ;carro.c: 74:             case 7:
-[e :U 381 ]
+[; ;carro.c: 74:                     LATBbits.LB1 = 1;
+[e = . . _LATBbits 1 1 -> -> 1 `i `uc ]
 "75
-[; ;carro.c: 75:                 PWM_Speed(1);
-[e ( _PWM_Speed (1 -> -> 1 `i `uc ]
+[; ;carro.c: 75:                     LATBbits.LB2 = 1;
+[e = . . _LATBbits 1 2 -> -> 1 `i `uc ]
 "76
-[; ;carro.c: 76:                 break;
-[e $U 371  ]
+[; ;carro.c: 76:                     LATBbits.LB3 = 0;
+[e = . . _LATBbits 1 3 -> -> 0 `i `uc ]
 "77
-[; ;carro.c: 77:             case 8:
-[e :U 382 ]
+[; ;carro.c: 77:                     break;
+[e $U 372  ]
 "78
-[; ;carro.c: 78:                 PWM_Speed(2);
-[e ( _PWM_Speed (1 -> -> 2 `i `uc ]
+[; ;carro.c: 78:                 case 4:
+[e :U 378 ]
 "79
-[; ;carro.c: 79:                 break;
-[e $U 371  ]
+[; ;carro.c: 79:                     TRISBbits.RB4 ^= 1;
+[e =^ . . _TRISBbits 1 4 -> -> 1 `i `Vuc ]
 "80
-[; ;carro.c: 80:             case 9:
-[e :U 383 ]
+[; ;carro.c: 80:                     break;
+[e $U 372  ]
 "81
-[; ;carro.c: 81:                 PWM_Speed(3);
-[e ( _PWM_Speed (1 -> -> 3 `i `uc ]
+[; ;carro.c: 81:                 case 5:
+[e :U 379 ]
 "82
-[; ;carro.c: 82:                 break;
-[e $U 371  ]
+[; ;carro.c: 82:                     T1CONbits.TMR1ON ^= 1;
+[e =^ . . _T1CONbits 1 0 -> -> 1 `i `Vuc ]
 "83
-[; ;carro.c: 83:             case 10:
-[e :U 384 ]
+[; ;carro.c: 83:                     if (PORTBbits.RB4 == 0){
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 380  ]
+{
 "84
-[; ;carro.c: 84:                 PWM_Speed(4);
-[e ( _PWM_Speed (1 -> -> 4 `i `uc ]
+[; ;carro.c: 84:                         LATBbits.LB4 = 1;
+[e = . . _LATBbits 1 4 -> -> 1 `i `uc ]
 "85
-[; ;carro.c: 85:                 break;
-[e $U 371  ]
+[; ;carro.c: 85:                     }
+}
+[e :U 380 ]
 "86
-[; ;carro.c: 86:             default:
-[e :U 385 ]
+[; ;carro.c: 86:                     break;
+[e $U 372  ]
 "87
-[; ;carro.c: 87:                 PWM_Speed(0);
+[; ;carro.c: 87:                 case 6:
+[e :U 381 ]
+"88
+[; ;carro.c: 88:                     PWM_Speed(0);
 [e ( _PWM_Speed (1 -> -> 0 `i `uc ]
 "89
-[; ;carro.c: 89:                 break;
-[e $U 371  ]
+[; ;carro.c: 89:                     break;
+[e $U 372  ]
 "90
-[; ;carro.c: 90:         }
-}
-[e $U 371  ]
-[e :U 372 ]
-[e [\ _numeroComando , $ -> 0 `i 373
- , $ -> 1 `i 374
- , $ -> 2 `i 375
- , $ -> 3 `i 376
- , $ -> 4 `i 377
- , $ -> 5 `i 378
- , $ -> 6 `i 380
- , $ -> 7 `i 381
- , $ -> 8 `i 382
- , $ -> 9 `i 383
- , $ -> 10 `i 384
- 385 ]
-[e :U 371 ]
+[; ;carro.c: 90:                 case 7:
+[e :U 382 ]
 "91
-[; ;carro.c: 91:     }
+[; ;carro.c: 91:                     PWM_Speed(1);
+[e ( _PWM_Speed (1 -> -> 1 `i `uc ]
+"92
+[; ;carro.c: 92:                     break;
+[e $U 372  ]
+"93
+[; ;carro.c: 93:                 case 8:
+[e :U 383 ]
+"94
+[; ;carro.c: 94:                     PWM_Speed(2);
+[e ( _PWM_Speed (1 -> -> 2 `i `uc ]
+"95
+[; ;carro.c: 95:                     break;
+[e $U 372  ]
+"96
+[; ;carro.c: 96:                 case 9:
+[e :U 384 ]
+"97
+[; ;carro.c: 97:                     PWM_Speed(3);
+[e ( _PWM_Speed (1 -> -> 3 `i `uc ]
+"98
+[; ;carro.c: 98:                     break;
+[e $U 372  ]
+"99
+[; ;carro.c: 99:                 case 10:
+[e :U 385 ]
+"100
+[; ;carro.c: 100:                     PWM_Speed(4);
+[e ( _PWM_Speed (1 -> -> 4 `i `uc ]
+"101
+[; ;carro.c: 101:                     break;
+[e $U 372  ]
+"102
+[; ;carro.c: 102:                 default:
+[e :U 386 ]
+"103
+[; ;carro.c: 103:                     PWM_Speed(0);
+[e ( _PWM_Speed (1 -> -> 0 `i `uc ]
+"105
+[; ;carro.c: 105:                     break;
+[e $U 372  ]
+"106
+[; ;carro.c: 106:             }
+}
+[e $U 372  ]
+[e :U 373 ]
+[e [\ _numeroComando , $ -> 0 `i 374
+ , $ -> 1 `i 375
+ , $ -> 2 `i 376
+ , $ -> 3 `i 377
+ , $ -> 4 `i 378
+ , $ -> 5 `i 379
+ , $ -> 6 `i 381
+ , $ -> 7 `i 382
+ , $ -> 8 `i 383
+ , $ -> 9 `i 384
+ , $ -> 10 `i 385
+ 386 ]
+[e :U 372 ]
+"107
+[; ;carro.c: 107:         }
+}
+[e :U 371 ]
+"108
+[; ;carro.c: 108:     }
 }
 [e :U 368 ]
 [e $U 369  ]
 [e :U 370 ]
-"92
-[; ;carro.c: 92: }
+"109
+[; ;carro.c: 109: }
 [e :UE 367 ]
 }
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-"94
-[; ;carro.c: 94: void __attribute__((picinterrupt(("")))) ISR(){
+"111
+[; ;carro.c: 111: void __attribute__((picinterrupt(("low_priority")))) ISR(){
 [v _ISR `(v ~T36 @X0 1 ef ]
 {
 [e :U _ISR ]
 [f ]
-"95
-[; ;carro.c: 95:     if (PIR1bits.TMR1IF == 1){
-[e $ ! == -> . . _PIR1bits 0 0 `i -> 1 `i 387  ]
+"112
+[; ;carro.c: 112:     if (PIR1bits.TMR1IF == 1){
+[e $ ! == -> . . _PIR1bits 0 0 `i -> 1 `i 388  ]
 {
-"96
-[; ;carro.c: 96:         contador++;
+"113
+[; ;carro.c: 113:         contador++;
 [e ++ _contador -> -> 1 `i `Vi ]
-"97
-[; ;carro.c: 97:         if (contador == 19){
-[e $ ! == _contador -> 19 `i 388  ]
+"114
+[; ;carro.c: 114:         if (contador == 19){
+[e $ ! == _contador -> 19 `i 389  ]
 {
-"98
-[; ;carro.c: 98:             LATBbits.LB4 ^= 1;
+"115
+[; ;carro.c: 115:             LATBbits.LB4 ^= 1;
 [e =^ . . _LATBbits 1 4 -> -> 1 `i `Vuc ]
-"99
-[; ;carro.c: 99:             contador = 0;
+"116
+[; ;carro.c: 116:             contador = 0;
 [e = _contador -> 0 `i ]
-"100
-[; ;carro.c: 100:         }
+"117
+[; ;carro.c: 117:         }
+}
+[e :U 389 ]
+"118
+[; ;carro.c: 118:         PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"119
+[; ;carro.c: 119:     }
 }
 [e :U 388 ]
-"101
-[; ;carro.c: 101:         PIR1bits.TMR1IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"102
-[; ;carro.c: 102:     }
+"120
+[; ;carro.c: 120: }
+[e :UE 387 ]
 }
-[e :U 387 ]
-"103
-[; ;carro.c: 103: }
-[e :UE 386 ]
+[v $root$_ISR_Emergencia `(v ~T0 @X0 0 e ]
+"122
+[; ;carro.c: 122: void __attribute__((picinterrupt(("high_priority")))) ISR_Emergencia(){
+[v _ISR_Emergencia `(v ~T37 @X0 1 ef ]
+{
+[e :U _ISR_Emergencia ]
+[f ]
+"123
+[; ;carro.c: 123:     if(INT0IF){
+[e $ ! _INT0IF 391  ]
+{
+"124
+[; ;carro.c: 124:         if(emergencia == 0){
+[e $ ! == -> _emergencia `i -> 0 `i 392  ]
+{
+"125
+[; ;carro.c: 125:             PWM_Speed(0);
+[e ( _PWM_Speed (1 -> -> 0 `i `uc ]
+"126
+[; ;carro.c: 126:             TRISBbits.RB4 = 1;
+[e = . . _TRISBbits 1 4 -> -> 1 `i `uc ]
+"127
+[; ;carro.c: 127:             T1CONbits.TMR1ON = 0;
+[e = . . _T1CONbits 1 0 -> -> 0 `i `uc ]
+"128
+[; ;carro.c: 128:             emergencia = 1;
+[e = _emergencia -> -> 1 `i `b ]
+"129
+[; ;carro.c: 129:         }
+}
+[e $U 393  ]
+"130
+[; ;carro.c: 130:         else{
+[e :U 392 ]
+{
+"131
+[; ;carro.c: 131:             emergencia = 0;
+[e = _emergencia -> -> 0 `i `b ]
+"132
+[; ;carro.c: 132:         }
+}
+[e :U 393 ]
+"133
+[; ;carro.c: 133:         INT0IF = 0;
+[e = _INT0IF -> -> 0 `i `b ]
+"134
+[; ;carro.c: 134:     }
+}
+[e :U 391 ]
+"135
+[; ;carro.c: 135: }
+[e :UE 390 ]
 }

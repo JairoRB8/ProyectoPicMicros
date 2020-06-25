@@ -109,6 +109,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7448
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7448: extern volatile T1CONbits_t T1CONbits __attribute__((address(0xFCD)));
 [v _T1CONbits `VS316 ~T0 @X0 0 e@4045 ]
+"10830
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10830: extern volatile __bit TMR1IF __attribute__((address(0x7CF0)));
+[v _TMR1IF `Vb ~T0 @X0 0 e@31984 ]
 "4390
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4390:     struct {
 [s S175 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -124,25 +127,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4408
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4408: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
 [v _PIE1bits `VS174 ~T0 @X0 0 e@3997 ]
-"8588
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8588:     struct {
-[s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S360 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"8598
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8598:     struct {
-[s S361 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S361 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"8608
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8608:     struct {
-[s S362 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S362 . . GIEL GIEH ]
-"8587
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8587: typedef union {
-[u S359 `S360 1 `S361 1 `S362 1 ]
-[n S359 . . . . ]
-"8614
-[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8614: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
-[v _INTCONbits `VS359 ~T0 @X0 0 e@4082 ]
+"4558
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4558:     struct {
+[s S181 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S181 . TMR1IP TMR2IP CCP1IP SSPIP TXIP RCIP ADIP SPPIP ]
+"4568
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4568:     struct {
+[s S182 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S182 . . TX1IP RC1IP . PSPIP ]
+"4557
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4557: typedef union {
+[u S180 `S181 1 `S182 1 ]
+[n S180 . . . ]
+"4576
+[; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 4576: extern volatile IPR1bits_t IPR1bits __attribute__((address(0xF9F)));
+[v _IPR1bits `VS180 ~T0 @X0 0 e@3999 ]
 "54 D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;D:/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -747,18 +746,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LibreriaMicros.c: 40:     T1CONbits.T1CKPS0 = 0;
 [e = . . _T1CONbits 2 3 -> -> 0 `i `uc ]
 "41
-[; ;LibreriaMicros.c: 41:     PIE1bits.TMR1IE = 1;
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+[; ;LibreriaMicros.c: 41:     TMR1IF = 0;
+[e = _TMR1IF -> -> 0 `i `b ]
 "42
-[; ;LibreriaMicros.c: 42:     T1CONbits.TMR1ON = 0;
-[e = . . _T1CONbits 1 0 -> -> 0 `i `uc ]
+[; ;LibreriaMicros.c: 42:     PIE1bits.TMR1IE = 1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
 "43
-[; ;LibreriaMicros.c: 43:     INTCONbits.PEIE = 1;
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[; ;LibreriaMicros.c: 43:     IPR1bits.TMR1IP = 1;
+[e = . . _IPR1bits 0 0 -> -> 1 `i `uc ]
 "44
-[; ;LibreriaMicros.c: 44:     INTCONbits.GIE = 1;
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"45
-[; ;LibreriaMicros.c: 45: }
+[; ;LibreriaMicros.c: 44:     T1CONbits.TMR1ON = 0;
+[e = . . _T1CONbits 1 0 -> -> 0 `i `uc ]
+"46
+[; ;LibreriaMicros.c: 46: }
 [e :UE 373 ]
 }

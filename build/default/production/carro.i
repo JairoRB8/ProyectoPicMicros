@@ -5661,12 +5661,15 @@ volatile int contador = 0;
 char comandoRecibido;
 int numeroComando;
 __bit ledEncendida = 0;
+volatile __bit emergencia = 0;
+
 void main(void) {
+    ADCON1 = 0b1111;
     USART_Init(9600);
     PWM_Init();
     LATC=0;
     LATA=0;
-    TRISBbits.RB0 = 0;
+    TRISAbits.RA6 = 0;
     TRISBbits.RB1 = 0;
     TRISBbits.RB2 = 0;
     TRISBbits.RB3 = 0;
@@ -5674,70 +5677,84 @@ void main(void) {
     TRISAbits.RA1 = 0;
 
 
+    INTCON2bits.RBPU = 1;
+    TRISBbits.RB0 = 1;
+    INT0IF = 0;
+    INT0IE = 1;
+
+
+
     LATBbits.LB4 = 1;
     timer_init();
-    while(1){
-        comandoRecibido = USART_Rx();
-        numeroComando = comandoRecibido - '0';
-        PORTAbits.RA1 = 1;
-        switch (numeroComando){
-            case 0:
-                LATBbits.LB0 = 1;
-                LATBbits.LB1 = 0;
-                LATBbits.LB2 = 1;
-                LATBbits.LB3 = 0;
-                break;
-            case 1:
-                LATBbits.LB0 = 0;
-                LATBbits.LB1 = 1;
-                LATBbits.LB2 = 0;
-                LATBbits.LB3 = 1;
-                break;
-            case 2:
-                LATBbits.LB0 = 1;
-                LATBbits.LB1 = 0;
-                LATBbits.LB2 = 0;
-                LATBbits.LB3 = 1;
-                break;
-            case 3:
-                LATBbits.LB0 = 0;
-                LATBbits.LB1 = 1;
-                LATBbits.LB2 = 1;
-                LATBbits.LB3 = 0;
-                break;
-            case 4:
-                TRISBbits.RB4 ^= 1;
-                break;
-            case 5:
-                T1CONbits.TMR1ON ^= 1;
-                if (PORTBbits.RB4 == 0){
-                    LATBbits.LB4 = 1;
-                }
-                break;
-            case 6:
-                PWM_Speed(0);
-                break;
-            case 7:
-                PWM_Speed(1);
-                break;
-            case 8:
-                PWM_Speed(2);
-                break;
-            case 9:
-                PWM_Speed(3);
-                break;
-            case 10:
-                PWM_Speed(4);
-                break;
-            default:
-                PWM_Speed(0);
 
-                break;
+
+    RCONbits.IPEN = 1;
+    INTCONbits.GIEH = 1;
+    INTCONbits.GIEL = 1;
+
+    while(1){
+        if(emergencia == 0){
+            comandoRecibido = USART_Rx();
+            numeroComando = comandoRecibido - '0';
+            switch (numeroComando){
+                case 0:
+                    LATAbits.LA6 = 1;
+                    LATBbits.LB1 = 0;
+                    LATBbits.LB2 = 1;
+                    LATBbits.LB3 = 0;
+                    break;
+                case 1:
+                    LATAbits.LA6 = 0;
+                    LATBbits.LB1 = 1;
+                    LATBbits.LB2 = 0;
+                    LATBbits.LB3 = 1;
+                    break;
+                case 2:
+                    LATAbits.LA6= 1;
+                    LATBbits.LB1 = 0;
+                    LATBbits.LB2 = 0;
+                    LATBbits.LB3 = 1;
+                    break;
+                case 3:
+                    LATAbits.LA6 = 0;
+                    LATBbits.LB1 = 1;
+                    LATBbits.LB2 = 1;
+                    LATBbits.LB3 = 0;
+                    break;
+                case 4:
+                    TRISBbits.RB4 ^= 1;
+                    break;
+                case 5:
+                    T1CONbits.TMR1ON ^= 1;
+                    if (PORTBbits.RB4 == 0){
+                        LATBbits.LB4 = 1;
+                    }
+                    break;
+                case 6:
+                    PWM_Speed(0);
+                    break;
+                case 7:
+                    PWM_Speed(1);
+                    break;
+                case 8:
+                    PWM_Speed(2);
+                    break;
+                case 9:
+                    PWM_Speed(3);
+                    break;
+                case 10:
+                    PWM_Speed(4);
+                    break;
+                default:
+                    PWM_Speed(0);
+
+                    break;
+            }
         }
     }
 }
 
-void __attribute__((picinterrupt(("")))) ISR(){
+void __attribute__((picinterrupt(("low_priority")))) ISR(){
     if (PIR1bits.TMR1IF == 1){
         contador++;
         if (contador == 19){
@@ -5745,5 +5762,20 @@ void __attribute__((picinterrupt(("")))) ISR(){
             contador = 0;
         }
         PIR1bits.TMR1IF = 0;
+    }
+}
+
+void __attribute__((picinterrupt(("high_priority")))) ISR_Emergencia(){
+    if(INT0IF){
+        if(emergencia == 0){
+            PWM_Speed(0);
+            TRISBbits.RB4 = 1;
+            T1CONbits.TMR1ON = 0;
+            emergencia = 1;
+        }
+        else{
+            emergencia = 0;
+        }
+        INT0IF = 0;
     }
 }

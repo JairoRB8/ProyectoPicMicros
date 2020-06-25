@@ -5678,8 +5678,9 @@ void timer_init(){
     TMR1H = TMR1L = 0;
     T1CONbits.T1CKPS1 = 0;
     T1CONbits.T1CKPS0 = 0;
+    TMR1IF = 0;
     PIE1bits.TMR1IE = 1;
+    IPR1bits.TMR1IP = 1;
     T1CONbits.TMR1ON = 0;
-    INTCONbits.PEIE = 1;
-    INTCONbits.GIE = 1;
+
 }
